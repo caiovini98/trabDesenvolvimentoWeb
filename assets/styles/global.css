@@ -7,7 +7,8 @@
   --warning: #ebc22c;
   --danger: #ed3b26;
 }
-body, html{
+body,
+html {
   height: 100% !important;
 }
 * {
