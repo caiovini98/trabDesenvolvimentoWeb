@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema ABC</title>
+    <link rel="stylesheet" href="../../scss/theme.css">
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body style="margin: 0; padding: 0; box-sizing: border-box; display: flex">
+    <div style="display: flex; flex-direction: column; background-color: #6f97eb; height: 100%; width: 20%; justify-content: space-between; padding: 10px 0; align-items: center;">
+        <span>Cantina ABC</span>
+        <div class="buttonContainer">
+          <button onclick="showPanel(0,'#4BD2EB')">Produtos</button>
+          <button onclick="showPanel(1,'#4BD2EB')">Responsáveis</button>
+          <button onclick="showPanel(2,'#4BD2EB')">Alunos</button>
+        </div>
+        <button class="sair">SAIR</button>
+    </div>
+
+    <div class="tabPanel">Tab 1:Content</div>
+    <div class="tabPanel">Tab 2:Content</div>
+    <div class="tabPanel">Tab 3:Content</div>
+    <div class="tabPanel">Tab 4:Content</div>
+
+    <script src="myScript.js"></script>
+</body>
+</html>
