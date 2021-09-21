@@ -10,6 +10,7 @@
 body,
 html {
   height: 100% !important;
+  background-color: var(--background);
 }
 * {
   margin: 0 !important;
