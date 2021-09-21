@@ -6,6 +6,8 @@
   --info: #4bd2eb;
   --warning: #ebc22c;
   --danger: #ed3b26;
+  --white: #fff;
+  --black: #000;
 }
 body,
 html {
