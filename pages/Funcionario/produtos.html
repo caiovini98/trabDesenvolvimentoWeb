@@ -1,64 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema ABC</title>
+    <link rel="stylesheet" href="../../scss/theme.css" />
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema ABC</title>
-  <link rel="stylesheet" href="../../scss/theme.css">
-  <link rel="stylesheet" href="../../assets/styles/global.css">
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-
-<body>
-  <section id="global-layout">
-    <aside id="sidebar-container" class="d-flex flex-column align-items-center pt-5 shadow-lg ">
-      <h3 class="text-white">ABCantinas</h3>
-      <ul class="sidebar-nav nav flex-column nav-pills nav-fill mt-5">
-        <li class="nav-item text-start">
-          <a class="nav-link active" aria-current="page" href="./produtos.html">Produtos</a>
-        </li>
-        <li class="nav-item text-start">
-          <a class="nav-link" href="#">Responsáveis</a>
-        </li>
-        <li class="nav-item text-start">
-          <a class="nav-link" href="#">Alunos</a>
-        </li>
-        <li class="nav-item text-start">
-          <a class="nav-link" href="../Login/index.html">Sair</a>
-        </li>
-      </ul>
-
-    </aside>
-    <main id="page-container" class="pt-4 pb-5 overflow-auto">
-      <div class="d-flex flex-column page-header">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <h3>
-          Titulo da minha pagina html
-        </h3>
-      </div>
-      <div class="card mt-5">
-        <div class="card-body">
-          Seu contéudo html começa aqui :)
-        </div>
-      </div>
-    </main>
-
-    <div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">ABCcantinas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body px-0">
+  <body>
+    <section id="global-layout">
+      <aside
+        id="sidebar-container"
+        class="d-flex flex-column align-items-center pt-5 shadow-lg"
+      >
+        <h3 class="text-white">ABCantinas</h3>
         <ul class="sidebar-nav nav flex-column nav-pills nav-fill mt-5">
           <li class="nav-item text-start">
-            <a class="nav-link active" aria-current="page" href="./produtos.html">Produtos</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="./produtos.html"
+              >Produtos</a
+            >
           </li>
           <li class="nav-item text-start">
             <a class="nav-link" href="#">Responsáveis</a>
@@ -70,12 +36,177 @@
             <a class="nav-link" href="../Login/index.html">Sair</a>
           </li>
         </ul>
-      </div>
-    </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
-</body>
+      </aside>
+      <main id="page-container" class="pt-4 pb-5 overflow-auto">
+        <div class="d-flex flex-column page-header">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h3>
+            <strong>Todos os produtos</strong>
+          </h3>
+        </div>
+        
+        <section class="addProduto">
+          <button type="button" class="btn btn-success">Adicionar produto</button>
+        </section>
 
+        <div class="card mt-5">
+          <div class="card-body">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="card produtos" style="width: 18rem;">
+                  <img src="../../assets/images/sanduiche.jfif"/>
+                  <div class="infos">
+                    <section>
+                      <span><strong>#ABC123</strong></span>
+                      <div class="dropdown">
+                        <button class="dropbtn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                          </svg>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Bloquear</a>
+                          <a href="#">Editar</a>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <span><strong>Sanduiche</strong></span>
+                      <span><strong>R$ 3,00</strong></span>
+                    </section>
+                  </div>
+                </div>
+                
+                <div class="card produtos" style="width: 18rem;">
+                  <img src="../../assets/images/coxinha.jpg"/>
+                  <div class="infos">
+                    <section>
+                      <span><strong>#RE432A</strong></span>
+                      <div class="dropdown">
+                        <button class="dropbtn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                          </svg>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Bloquear</a>
+                          <a href="#">Editar</a>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <span><strong>Coxinha</strong></span>
+                      <span><strong>R$ 5,00</strong></span>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card produtos" style="width: 18rem;">
+                  <img src="../../assets/images/suco.jpg"/>
+                  <div class="infos">
+                    <section>
+                      <span><strong>#CVS123</strong></span>
+                      <div class="dropdown">
+                        <button class="dropbtn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                          </svg>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Bloquear</a>
+                          <a href="#">Editar</a>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <span><strong>Suco de laranja</strong></span>
+                      <span><strong>R$ 30,00</strong></span>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card produtos" style="width: 18rem;">
+                  <img src="../../assets/images/kibe.png"/>
+                  <div class="infos">
+                    <section>
+                      <span><strong>#A58123</strong></span>
+                      <div class="dropdown">
+                        <button class="dropbtn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                          </svg>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Bloquear</a>
+                          <a href="#">Editar</a>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <span><strong>Kibe</strong></span>
+                      <span><strong>R$ 1,50</strong></span>
+                    </section>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div
+        class="offcanvas offcanvas-start bg-primary"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">
+            ABCcantinas
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body px-0">
+          <ul class="sidebar-nav nav flex-column nav-pills nav-fill mt-5">
+            <li class="nav-item text-start">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./produtos.html"
+                >Produtos</a
+              >
+            </li>
+            <li class="nav-item text-start">
+              <a class="nav-link" href="#">Responsáveis</a>
+            </li>
+            <li class="nav-item text-start">
+              <a class="nav-link" href="#">Alunos</a>
+            </li>
+            <li class="nav-item text-start">
+              <a class="nav-link" href="../Login/index.html">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
