@@ -1,36 +1,40 @@
-.container-login {
-  width: 100vw;
-  height: 100vh;
+header {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #4BD2EB;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #6f97eb;
+  
 }
 
-.paddingBottom {
-  padding-bottom: 11px;
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
 }
 
-.box {
-  padding: 20px;
-  width: 35%;
-  height: 75%;
-  border-radius: 14px;
-  background: rgb(255, 255, 255);
+header div {
+  margin-left: auto;
 }
 
-.cadastrar a {
+header img {
+  height: 100px;
+  width: 100px;
+}
+
+a {
   text-decoration: none;
 }
 
-.image-logo {
+.teste {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 0.85rem;
 }
 
-img {
-  height: 110px;
-  width: 110px;
+.teste span {
+  margin-left: 1rem;
+  font-size: 30px;
 }
