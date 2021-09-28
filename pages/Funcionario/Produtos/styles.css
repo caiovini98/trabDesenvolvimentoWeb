@@ -8,8 +8,7 @@
       margin-right: 0.5rem;
   }
 
-  /* Style the list items */
- .aaa .bbb ul li {
+ .cardMain .cardSecondary ul li {
     position: relative;
     padding: 12px 8px 12px 40px;
     font-size: 18px;
@@ -26,11 +25,11 @@
     cursor: pointer;
   }
   
-  .aaa .bbb ul li:nth-child(odd) {
+  .cardMain .cardSecondary ul li:nth-child(odd) {
     background: #f9f9f9;
   }
   
-  .aaa .bbb ul li:hover {
+  .cardMain .cardSecondary ul li:hover {
     background: #ddd;
   }
   
@@ -38,7 +37,6 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      /* align-items: center; */
   }
  
   .close {
@@ -73,14 +71,12 @@
       border-radius: 5px;
   }
   
-  /* Clear floats after the header */
   .header:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Style the input */
   input {
     margin: 0;
     border: none;
@@ -91,7 +87,6 @@
     font-size: 16px;
   }
   
-  /* Style the "Add" button */
   .addBtn {
     padding: 10px;
     width: 20%;
@@ -118,7 +113,4 @@
   .addComida button {
       margin-right: 0.5rem;
   }
-
-  .alerta {
-    display: none;
-  }
+  
