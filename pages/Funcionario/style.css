@@ -72,3 +72,24 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.div-filtro{
+  width: 20%;
+  padding-bottom: 2%;
+}
+
+.button-buscar{
+  padding-top: 5%;
+}
+
+.btn-position{
+  margin-top: 20px;
+}
+
+.conten-margem{
+  margin-inline: 30%;
+}
+
+.btn-aling{
+  margin-inline: 17%;
+}
