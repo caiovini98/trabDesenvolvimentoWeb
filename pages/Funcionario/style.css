@@ -1,6 +1,5 @@
-.addProduto {
-  display: flex; 
-  justify-content: flex-end;
+#grid-alunos{
+  width: 55vw;
 }
 
 .produtos {
@@ -93,3 +92,31 @@
 .btn-aling{
   margin-inline: 17%;
 }
+
+.color-card {
+  background-color: #f7f7f7;
+}
+
+.color-saldo{
+  color: #4AE850;
+  font-size: larger;
+}
+
+
+table{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+thead{
+  color: white;
+}
+
+td{
+  color: #7C8084;
+}
+
+tr{
+  border-bottom: var(--info);
+}
+
