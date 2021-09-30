@@ -39,67 +39,79 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <h3>
-        <strong>Todos os responsáveis</strong>
+        <strong>Todos os alunos</strong>
       </h3>
     </div>
-
-    <section class="addProduto">
-      <a href="/pages/Funcionario/Responsaveis/adicionarresponsavel.html"><button type="button"
-                                                                                  class="btn btn-success">Adicionar responsável</button></a>
-    </section>
-
     <div class="card mt-5">
       <div class="card-body">
-        <div class="container">
-          <div class="div-filtro">
-            <input class="form-control form-control-sm" type="text" placeholder="Nome">
-            <div class="button-buscar">
-              <button type="button" class="btn btn-secondary btn-sm">Buscar</button>
-            </div>
+        <div class="container d-flex flex-column justify-content-between align-items-center">
+          <div class="row align-self-end">
+            <a href="./adicionaraluno.html">
+              <button type="button" class="btn btn-success">Adicionar aluno</button>
+            </a>
           </div>
-          <table class="table">
-            <thead class="thead-light bg-primary">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Nome</th>
-              <th scope="col">E-mail</th>
-              <th scope="col">Telefone</th>
-              <th scope="col">CPF</th>
-              <th scope="col"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>mark@hotmail.com</td>
-              <td>(71)99122-3123</td>
-              <td>07432093482</td>
-              <td>
-                <a class="btn btn-primary btn-sm rounded-circle" href="/pages/Funcionario/Responsaveis/editarresponsavel.html">
-                  ...</a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>jacob@hotmail.com</td>
-              <td>(71)99122-3123</td>
-              <td>43244353455</td>
-              <td><a class="btn btn-primary btn-sm" href="/pages/Funcionario/Responsaveis/editarresponsavel.html"><i
-                class="far fa-edit"></i></a></td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>larry@hotmail.com</td>
-              <td>(72)99122-3123</td>
-              <td>23423423423</td>
-              <td><a class="btn btn-primary btn-sm" href="/pages/Funcionario/Responsaveis/editarresponsavel.html"><i
-                class="far fa-edit"></i></a></td>
-            </tr>
-            </tbody>
-          </table>
+          <div class="row mt-5">
+            <table id="grid-alunos" class="table">
+              <thead class="thead-light bg-primary">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Matrícula</th>
+                <th scope="col"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>07432093482</td>
+                <td>
+                  <div class="dropdown">
+                    <a class="btn-sm btn-primary dropdown rounded-circle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="./editaraluno.html">Editar</a></li>
+                      <li><a class="dropdown-item" href="#">Excluir</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>43244353455</td>
+                <td>
+                  <div class="dropdown">
+                    <a class="btn-sm btn-primary dropdown rounded-circle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="./editaraluno.html">Editar</a></li>
+                      <li><a class="dropdown-item" href="#">Excluir</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>23423423423</td>
+                <td>
+                  <div class="dropdown">
+                    <a class="btn-sm btn-primary dropdown rounded-circle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="./editaraluno.html">Editar</a></li>
+                      <li><a class="dropdown-item" href="#">Excluir</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

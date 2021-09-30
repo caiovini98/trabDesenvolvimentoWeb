@@ -1,6 +1,5 @@
-.addProduto {
-  display: flex; 
-  justify-content: flex-end;
+#grid-alunos{
+  width: 55vw;
 }
 
 .produtos {
