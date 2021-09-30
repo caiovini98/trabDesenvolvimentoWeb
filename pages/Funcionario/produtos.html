@@ -20,10 +20,10 @@
           <a class="nav-link active" aria-current="page" href="./produtos.html">Produtos</a>
         </li>
         <li class="nav-item text-start">
-          <a class="nav-link" href="./Responsaveis/listaresponsaveis.html">Responsáveis</a>
+          <a class="nav-link" href="./ListarResponsaveis/index.html">Responsáveis</a>
         </li>
         <li class="nav-item text-start">
-          <a class="nav-link" href="../Alunos/saldoaluno.html">Alunos</a>
+          <a class="nav-link" href="./Alunos/saldoaluno.html">Alunos</a>
         </li>
         <li class="nav-item text-start">
           <a class="nav-link" href="../Login/index.html">Sair</a>
@@ -41,19 +41,19 @@
         </h3>
       </div>
 
-      <section class="addProduto">
-        <button type="button" class="btn btn-success"
-          onclick="window.location.href = './Produtos/addProdutos.html'">Adicionar produto</button>
-      </section>
-
       <div class="card mt-5">
         <div class="card-body">
-          <div class="container">
+          <div class="container d-flex flex-column justify-content-between align-items-center">
+            <div class="row align-self-end">
+              <a href="./Produtos/addProdutos.html">
+                <button type="button" class="btn btn-success">Adicionar produto</button>
+              </a>
+            </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
 
               <div class="col-md-3">
-                <div class="card mt-3" style="width: 14.5rem; height: 15rem;">
-                  <img src="../../../assets/images/suco.jpg" class="card-img-top" alt="produto - carro">
+                <div class="card mt-3" style="width: 14.5rem;">
+                  <img src="../../assets/images/sanduiche.jfif" class="card-img-top" alt="produto - carro">
                   <div class="card-body pb-0 px-3">
                     <div class="row align-items-center justify-content-between ">
                       <div class="col-md-7 p-0">
@@ -61,29 +61,28 @@
                           #000000
                         </p>
                       </div>
-                      <div class="dropdown col-md-2 p-0">
-                        <button class="dropbtn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                            <path
-                              d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-                          </svg>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Bloquear</a>
-                          <a href="#">Editar</a>
-                          <a href="#">Excluir</a>
+                      <div class="col-md-4 p-0 d-flex justify-content-end">
+                        <div class="dropdown">
+                          <button class="btn more-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../assets/Icons/more-icon.svg" alt="icone">
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Bloquear</a></li>
+                            <li><a class="dropdown-item" href="#" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalEditProduto">Editar</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                     <div class=" row align-items-center justify-content-between mt-2">
                       <div class="col-md-8 p-0">
                         <p class="fw-bold fs-6 mb-1">
-                          Suco de Laranja
+                          Pastel de frango
                         </p>
                       </div>
                       <div class="col-md-4 p-0 text-end">
-                        <p class="text-primary mb-1">R$ 6,00</p>
+                        <p class="text-primary mb-1">R$ 10,00</p>
                       </div>
                     </div>
                   </div>
@@ -91,8 +90,8 @@
               </div>
 
               <div class="col-md-3">
-                <div class="card mt-3" style="width: 14.5rem; height: 15rem;">
-                  <img src="../../../assets/images/coxinha.jpg" class="card-img-top" alt="produto - carro">
+                <div class="card mt-3" style="width: 14.5rem;">
+                  <img src="../../assets/images/sanduiche.jfif" class="card-img-top" alt="produto - carro">
                   <div class="card-body pb-0 px-3">
                     <div class="row align-items-center justify-content-between ">
                       <div class="col-md-7 p-0">
@@ -100,29 +99,28 @@
                           #000000
                         </p>
                       </div>
-                      <div class="dropdown col-md-2 p-0">
-                        <button class="dropbtn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                            <path
-                              d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-                          </svg>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Bloquear</a>
-                          <a href="#">Editar</a>
-                          <a href="#">Excluir</a>
+                      <div class="col-md-4 p-0 d-flex justify-content-end">
+                        <div class="dropdown">
+                          <button class="btn more-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../assets/Icons/more-icon.svg" alt="icone">
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Bloquear</a></li>
+                            <li><a class="dropdown-item" href="#" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalEditProduto">Editar</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                     <div class=" row align-items-center justify-content-between mt-2">
                       <div class="col-md-8 p-0">
                         <p class="fw-bold fs-6 mb-1">
-                          Coxinha
+                          Pastel de frango
                         </p>
                       </div>
                       <div class="col-md-4 p-0 text-end">
-                        <p class="text-primary mb-1">R$ 6,00</p>
+                        <p class="text-primary mb-1">R$ 10,00</p>
                       </div>
                     </div>
                   </div>
@@ -130,8 +128,8 @@
               </div>
 
               <div class="col-md-3">
-                <div class="card mt-3" style="width: 14.5rem; height: 15rem;">
-                  <img src="../../../assets/images/kibe.jpg" class="card-img-top" alt="produto - carro">
+                <div class="card mt-3" style="width: 14.5rem;">
+                  <img src="../../assets/images/sanduiche.jfif" class="card-img-top" alt="produto - carro">
                   <div class="card-body pb-0 px-3">
                     <div class="row align-items-center justify-content-between ">
                       <div class="col-md-7 p-0">
@@ -139,28 +137,28 @@
                           #000000
                         </p>
                       </div>
-                      <div class="dropdown col-md-2 p-0">
-                        <button class="dropbtn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                            <path
-                              d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-                          </svg>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Bloquear</a>
-                          <a href="#">Editar</a>
+                      <div class="col-md-4 p-0 d-flex justify-content-end">
+                        <div class="dropdown">
+                          <button class="btn more-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../assets/Icons/more-icon.svg" alt="icone">
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Bloquear</a></li>
+                            <li><a class="dropdown-item" href="#" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalEditProduto">Editar</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                     <div class=" row align-items-center justify-content-between mt-2">
                       <div class="col-md-8 p-0">
                         <p class="fw-bold fs-6 mb-1">
-                          Kibe
+                          Pastel de frango
                         </p>
                       </div>
                       <div class="col-md-4 p-0 text-end">
-                        <p class="text-primary mb-1">R$ 6,00</p>
+                        <p class="text-primary mb-1">R$ 10,00</p>
                       </div>
                     </div>
                   </div>
@@ -168,8 +166,8 @@
               </div>
 
               <div class="col-md-3">
-                <div class="card mt-3" style="width: 14.5rem; height: 15rem;">
-                  <img src="../../../assets/images/sanduiche.jfif" class="card-img-top" alt="produto - carro">
+                <div class="card mt-3" style="width: 14.5rem;">
+                  <img src="../../assets/images/sanduiche.jfif" class="card-img-top" alt="produto - carro">
                   <div class="card-body pb-0 px-3">
                     <div class="row align-items-center justify-content-between ">
                       <div class="col-md-7 p-0">
@@ -177,29 +175,28 @@
                           #000000
                         </p>
                       </div>
-                      <div class="dropdown col-md-2 p-0">
-                        <button class="dropbtn">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                            <path
-                              d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-                          </svg>
-                        </button>
-                        <div class="dropdown-content">
-                          <a type="button" onclick="alert('Produto bloqueado com sucesso.')">Bloquear</a>
-                          <a type="button" data-bs-toggle="modal" data-bs-target="#modalEditProduto">Editar</a>
-                          <a type="button" onclick="alert('Produto excluído com sucesso.')">Excluir</a>
+                      <div class="col-md-4 p-0 d-flex justify-content-end">
+                        <div class="dropdown">
+                          <button class="btn more-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../assets/Icons/more-icon.svg" alt="icone">
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Bloquear</a></li>
+                            <li><a class="dropdown-item" href="#" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalEditProduto">Editar</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                     <div class=" row align-items-center justify-content-between mt-2">
                       <div class="col-md-8 p-0">
                         <p class="fw-bold fs-6 mb-1">
-                          Sanduíche
+                          Pastel de frango
                         </p>
                       </div>
                       <div class="col-md-4 p-0 text-end">
-                        <p class="text-primary mb-1">R$ 6,00</p>
+                        <p class="text-primary mb-1">R$ 10,00</p>
                       </div>
                     </div>
                   </div>
@@ -250,7 +247,7 @@
             <div class="row">
               <div class="col-sm">
                 <div class="col-sm">
-                  <img src="../../../assets/images/sanduiche.jfif" class="card-img-top" alt="Coxinha"
+                  <img src="../../assets/images/sanduiche.jfif" class="card-img-top" alt="Coxinha"
                     style="height: 15rem; height: 15rem;">
                 </div>
                 <div class="row g-3" style="margin-top: 0.5rem;">
