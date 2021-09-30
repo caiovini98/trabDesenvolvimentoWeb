@@ -15,31 +15,33 @@
   <section class="row">
     <div class="col-md-6 d-flex flex-column">
       <h2 class="mt-4 ps-4 fw-bold">Cadastrar escola</h2>
-      <form action="" id="form-cadastro" class="d-flex flex-column justify-content-center align-items-center">
+      <form action="" id="form-cadastro"
+        class="d-flex flex-column justify-content-center align-items-center needs-validation" novalidate>
         <div class="container mb-5">
           <h5 class="mb-4 ps-3">Informações da escola</h5>
           <div class="row">
             <div class="col-md-6">
               <div class="form-floating mb-3">
-                <input name="name" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input name="name" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Nome</label>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-floating mb-3">
-                <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">E-mail</label>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-floating mb-3">
-                <input name="address" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input name="address" type="text" class="form-control" id="floatingInput"
+                  placeholder="name@example.com" required>
                 <label for="floatingInput">Endereço</label>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-floating mb-3">
-                <input name="phone" type="tel" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input name="phone" type="tel" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Telefone</label>
               </div>
             </div>
@@ -51,13 +53,14 @@
           <div class="row">
             <div class="col-md-6">
               <div class="form-floating mb-3">
-                <input name="login" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input name="login" type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Login</label>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-floating mb-3">
-                <input name="password" type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input name="password" type="password" class="form-control" id="floatingInput"
+                  placeholder="name@example.com" required>
                 <label for="floatingInput">Senha</label>
               </div>
             </div>
@@ -74,6 +77,27 @@
       <h2 class="text-white mt-3 fs-1 fw-bold text-wrap">Venha fazer parte dessa história</h2>
     </div>
   </section>
+  <script>
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      let forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 </body>
 
 </html>
