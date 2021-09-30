@@ -44,12 +44,21 @@
     </div>
     <div class="card mt-5">
       <div class="card-body">
-        <div class="container d-flex flex-column justify-content-between align-items-center">
-          <div class="row align-self-end">
+        <div class="col-md-12 d-flex justify-content-between align-items-center">
+          <div class="input-group">
+            <div class="form-floating col-md-10">
+              <input type="text" class="form-control" id="floatingNome" placeholder="Mark">
+              <label  for="floatingNome">Nome do aluno</label>
+            </div>
+            <span class="btn btn-primary fas fa-search d-inline-flex align-items-center" type="button" id="button-addon1"></span>
+          </div>
+          <div class="col-md-4 d-inline-flex justify-content-end">
             <a href="./adicionaraluno.html">
-              <button type="button" class="btn btn-success">Adicionar aluno</button>
+              <button type="button" class="btn btn-success">Adicionar Aluno</button>
             </a>
           </div>
+        </div>
+        <div class="container d-flex flex-column justify-content-between align-items-center">
           <div class="row mt-5">
             <table id="grid-alunos" class="table">
               <thead class="thead-light bg-primary">
