@@ -1,0 +1,8 @@
+.botoes {
+    display: flex; 
+    justify-content: flex-end;
+  }
+
+  .botoes a {
+      margin-left: 0.5rem;
+  }
